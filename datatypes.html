@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Data Types</title>
+        <script>
+            const pi = 3.14; // its value is 3.14  
+            const smallestNaturalNumber = 0; // its value is 0 
+
+            document.write('<h1>'+pi+'</h1>');
+            document.write('<h1>'+smallestNaturalNumber+'</h1>');
+
+            let result = 0/0; // its value is NaN  
+            let Result = "Ten" * 5; //its value is NaN 
+
+            document.write('<h1>'+result+'</h1>');
+            document.write('<h1>'+Result+'</h1>');
+
+            let ownership= "Rexha's";    //OR     
+            let Ownership = 'Rexha"s'; 
+            document.write('<h1>'+ownership+'</h1>');
+            document.write('<h1>'+Ownership+'</h1>');
+
+            //literals
+            let firstName="Kevin";
+            let lastName="Patrick";
+            document.write("Name: "+firstName+" "+lastName+" \n Email:"+firstName+"_"+lastName+"@abc.com");
+
+            const bigintvar = 67423478234689887894747472389477823647n;
+            const Bigintvar = BigInt("67423478234689887894747472389477823647");
+            const bigintFromNumber = BigInt(10); // same as 10n
+            document.write('<h1>'+bigintvar+'</h1>');
+            document.write('<h1>'+Bigintvar+'</h1>');
+            document.write('<h1>'+bigintFromNumber+'</h1>');
+
+            let bigIntvar = 6n;
+            let numvar = 3;
+// number to bigint
+            alert(bigIntvar + BigInt(numvar)); // 9
+// bigint to number
+            alert(Number(bigIntvar ) + numvar); // 9
+
+            // let empid1 = Symbol("empno");
+            // let empid2 = Symbol("empno");
+            // alert(empid1== empid2); // false
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
