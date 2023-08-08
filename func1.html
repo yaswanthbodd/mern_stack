@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Booking Details</title>
+    <title>Ticket Details</title>
     <style>
         div#maincontent {
-            height: 200px;
-            width: 600px;
+            height: 150px;
+            width: 500px;
             border: 1px solid #CEE2FA;
             text-align: left;
             color: #08438E;
@@ -17,7 +17,7 @@
             text-decoration: bold;
             text-align: center;
             margin-top: 80px;
-            width: 600px;
+            width: 500px;
             border: 1px solid #CEE2FA;
             text-align: center;
             color: #08438E;
@@ -41,20 +41,24 @@
             <h4>Your Ticket Details:</h4>
             <br>
             <script>
-                // Write the code to display the total price and discounted price of tickets
-                var tickets=parseInt(prompt('Enter the no of tickets: '));
-                var ticketCost=9;
-                if(tickets<=2)
-                {
-                    let cost=tickets*9;
-                    document.write(`${tickets} cost is: ${cost}`);
-                }else if(tickets < 5){
-                    document.write('hello');
-                }else{
-                    document.write(`Booking is not allowed`);
+                
+                function ticket(tickets){
+                    var tickets=window.prompt("enter the tickets");
+                    const ticketPrice=150;
+                    var totalCost=tickets * ticketPrice;
+                    var discountCost=(totalCost*90)/100;
+                    document.write(`Total number of seats booked: ${tickets} </br>
+                                Total cost of ${tickets} tickets: &#8377;${totalCost} </br>
+                                Festive season discount is: 10&#37; </br>
+                                Total cost after discount is: &#8377;${discountCost}`);
                 }
+                //Write the code to calculate the total price and discounted price for the tickets
+                
+                ticket(tickets)
             </script>
         </div>
+        <button onclick="ticket()">click here</button>
     </center>
+    
 </body>
 </html>

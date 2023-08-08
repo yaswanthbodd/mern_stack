@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bulit in Functions</title>
+    </head>
+    <body>
+        
+        <script>
+
+            function alefun(){
+                alert('hello This is function');
+            }
+
+            function confun(){
+                let hi=confirm("shell we proceed")
+            }
+
+            function profun(){
+                let h=prompt("Enter the anything ")
+                document.write(`You Entered in prompt ${h}`)
+            }
+
+            function parintfun(){
+                document.write(parseInt("10"));         //10
+                parseInt("10 20 30");   //10, only the integer part is returned
+                parseInt("10 years");   //10
+                parseInt("years 10");
+            }
+
+            function evalfun(){
+                
+                eval("let num1=4;let num2=9; let result=num1+num2; document.write(result)");
+
+            }
+
+            function excute(){
+                alert('hi hello')
+                
+            }
+
+            function excute1(){
+                alert('hi hello how are you')
+            }
+            function dum(){
+                //setTimeout(excute,3000)
+                setInterval(excute1,3000)
+            }
+
+
+        </script>
+        <button onclick="alefun()">Alert Method</button><br>
+        <button onclick="confun()">confirm Method</button><br>
+        <button onclick="profun()">Prompt Method</button><br>
+        <button onclick="parintfun()">ParseInt Method</button><br>
+        <button onclick="evalfun()">eval Method</button><br>
+        <button onclick="dum()">settimeout metod</button>
+    </body>
+</html>

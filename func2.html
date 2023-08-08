@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Function</title>
+    </head>
+    <body>
+
+        <script>
+            function func(){
+                document.write('functions without using parameters<br>')
+            }
+
+            function fun1(num){
+                document.write('Functions using parameters<br>')
+                document.write(num)
+            }
+
+            function fun2(num,num2=1){
+                document.write(`<br>sum is ${num+num2}`)
+            }
+
+            func()
+            fun1(9)
+            fun2(4,9)
+            fun2(3)
+
+        </script>
+        
+    </body>
+</html>

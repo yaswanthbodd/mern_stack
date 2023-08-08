@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrow Functions</title>
+    </head>
+    <body>
+        
+        <script>
+
+            //Different Types of function declarations
+
+            function multiply(num1,num2){
+                let result=num1*num2
+                document.write(`Multiplication of two numbers ${num1}*${num2}=${result} <br>`)
+            }
+
+            multiply(4,9)
+
+            //Anonymous functions
+            let sub=function(x,y){
+                let result=x-y
+                document.write(`Subtraction of two numbers ${x}-${y}=${result} <br>`)
+            }
+
+            sub(4,9)
+
+            let sub1=function(){
+                document.write(`Anonymous function without arguments <br>`)
+            }
+
+            sub1()
+
+            // Arrow functions with arguments
+            let details=(firstName,lastName) => document.write(`Hello ${firstName} ${lastName} <br>`)
+
+            details()
+            details("Boddu","yaswanth")
+
+            //Arrow functions without arguments
+            let detail=()=> document.write(`Arrow functions without arguments<br>`)
+
+            detail()
+
+            var sum=(x,y)=>document.write(`sum of two numbers is ${x}+${y}=${eval(x+y)}`)
+
+            sum(4,9)
+
+            
+        </script>
+    </body>
+</html>

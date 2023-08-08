@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Built in class</title>
+    </head>
+    <body>
+        
+        <script>
+
+            class myArray extends Array{
+                constructor(...args){
+                super(...args)
+                }
+                display(){
+                    let strItems=""
+                    for(let val of this){
+                        strItems +=`${val}`
+                    }
+                    document.write(`Given Input is ${strItems} `)
+                }
+            }
+
+            let lett=new myArray("yaswanth","syam","srinu","subbu","subhani","pawan")
+            lett.display()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Classes in JS</title>
+    </head>
+    <body>
+        
+        <script>
+
+            class calcul{
+                constructor(num1,num2){
+                    this.num1=num1
+                    this.num2=num2
+                }
+
+                static display(){
+                    document.write("This is static method<br>")
+                }
+
+                add(){
+                    return this.num1+this.num2
+                }
+                sub(){
+                    return this.num1-this.num2
+                }
+            }
+            calcul.display()
+            let calcula=new calcul(300,200)
+            document.write("Addition of two numbers "+calcula.add())
+            document.write("<br>")
+            document.write("Subtraction of two numbers "+calcula.sub())
+
+        </script>
+    </body>
+</html>

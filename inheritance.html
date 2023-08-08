@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inheritance</title>
+    </head>
+    <body>
+        
+        <script>
+
+            class vehicle{
+                constructor(bike,model){
+                    this.bike=bike
+                    this.model=model
+                }
+            }
+            class Bike extends vehicle{
+                constructor(bike,model,regno,fueltype){
+                    super(bike,model)
+                    this.regno=regno
+                    this.fueltype=fueltype
+                    
+                }
+                getDetails(){
+                    document.write(`Bike Name: ${this.bike}<br>
+                                    Model Name: ${this.model}<br>
+                                    Registered No: ${this.regno}<br>
+                                    Fuel Type: ${this.fueltype}`)
+                }
+            }
+
+            let c=new Bike("Yamaha-MT-15","V","AP-31-0009","Petrol")
+            c.getDetails()
+        </script>
+    </body>
+</html>
